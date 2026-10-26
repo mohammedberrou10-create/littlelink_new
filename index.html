@@ -182,7 +182,8 @@ const DRESSES = [
 ];
 /* ===== نهاية القسم القابل للتعديل ===== */
 
-const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " دج";
+const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " دج";
+
 const $ = id => document.getElementById(id);
 const grid = $("grid"), dlg = $("dlg"), form = $("orderForm"), err = $("err");
 const waBase = "https://wa.me/" + SHOP.whatsapp;
